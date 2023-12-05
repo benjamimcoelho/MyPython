@@ -1,0 +1,124 @@
+begindeclares
+	int opcao=0
+	int first
+	int input
+	int counter=0
+	int output=1
+	int min
+	int n
+	int produtorio=1
+	int N=3
+	int aux
+	int total=0
+	int i
+	arrayInt teste[10]
+enddeclares
+
+while(opcao != 10) do
+	prints "Bem vindo à demonstração do compilador do grupo 57!\n"
+	prints "\n"
+	prints "1 - ler 4 números e dizer se podem ser os lados de um quadrado\n"
+	prints "2 - ler um inteiro N, depois ler N números e escrever o menor deles\n"
+	prints "3 - ler N (constante do programa) números e calcular e imprimir o seu produtório.\n"
+	prints "4 - contar e imprimir os números ímpares de uma sequência de números naturais.\n"
+	prints "5 - ler e armazenar N números num array; imprimir os valores por ordem inversa.\n"
+	prints "10 - sair da demonstração.\n"
+	prints "\n"
+	prints "Insira a sua opção:\n"
+
+	read opcao
+	
+	if (opcao==1)
+		prints "Insira o valor de um lado\n"
+		read first
+
+		while(counter<3 and output==1) do
+			prints "Insira o valor de um lado\n"
+			read input
+			if(input!=first)
+				atr output=0
+			else
+			endif
+			atr counter= counter + 1
+		endwhile
+
+		if(counter == 3 and output==1)
+			prints "Podem ser lados de um quadrado\n"
+		else 
+			prints "Não podem ser lados de um quadrado\n"
+		endif
+
+	else
+		if (opcao==2)
+			prints "Quantos números vai inserir?\n"
+			read n
+			prints "Insira um valor\n"
+			read min
+			atr n= n - 1
+
+			while(n>0) do
+				prints "Insira um valor\n"
+				read input
+				if (input<min)
+					atr min=input
+				else 
+				endif
+				atr n = n - 1
+			endwhile
+			
+			prints "O mínimo é: \n"
+			print min
+		else
+			if(opcao==3)
+				repeat
+					prints "Insira um valor: \n"
+					read input
+					atr produtorio = produtorio * input
+					atr N= N - 1
+				until(N<1)
+				
+				prints "O produtório é: \n"
+				print produtorio
+			else
+				if(opcao==4)
+					for(atr N=0;N<4;atr N= N + 1)do
+						prints "Insira um valor: \n"
+						read input
+						atr aux = input
+
+						while (aux > 0) do
+							atr aux = aux - 2
+						endwhile
+
+						if (aux==(-1))
+							prints "É ímpar!: \n"
+							print input
+							atr total = total + 1
+						else
+						endif
+					endfor
+					prints "Número total de números ímpares: \n"
+					print total
+
+				else
+					if (opcao==5)
+						for(atr i=0;i<10;atr i= i + 1)do
+							prints "Insira um valor para inserir no array: \n"
+							read input
+							atr teste[i]=input
+						endfor
+
+						for(atr i=9;i>=0;atr i= i - 1)do
+							print teste[i]
+						endfor
+					else
+					endif
+				endif
+			endif
+		endif
+	endif
+
+
+endwhile
+
+prints "Volte sempre!\n"

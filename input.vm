@@ -1,0 +1,12 @@
+begindeclares
+	int i
+	int j
+	int x
+enddeclares
+
+for(atr i=0;i<10;atr i=i+1) do
+	for(atr j=0;j<3;atr j=j+1) do
+		print x
+		atr x=x + (-1)
+	endfor
+endfor

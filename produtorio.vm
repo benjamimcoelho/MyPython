@@ -1,0 +1,13 @@
+begindeclares
+	int produtorio=1
+	int input
+	int N=3
+enddeclares
+
+repeat
+	read input
+	atr produtorio = produtorio * input
+	atr N= N - 1
+until(N<1)
+
+print produtorio

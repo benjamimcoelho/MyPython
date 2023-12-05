@@ -1,0 +1,25 @@
+begindeclares
+	int first
+	int input
+	int counter=0
+	int output=1
+enddeclares
+
+read first
+
+while(counter<3 and output==1) do
+	read input
+	if(input!=first)
+		atr output=0
+	else
+	endif
+	atr counter= counter + 1
+endwhile
+
+if(counter == 3 and output==1)
+prints "Podem ser lados de um quadrado"
+else 
+prints "Não podem ser lados de um quadrado"
+endif
+
+print output

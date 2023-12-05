@@ -1,0 +1,7 @@
+begindeclares
+    int a
+enddeclares
+
+atr a = 10 - (-4)
+
+print a

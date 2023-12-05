@@ -1,0 +1,23 @@
+begindeclares
+	int N
+	int input
+	int aux
+	int total=0
+enddeclares
+
+for(atr N=0;N<4;atr N= N + 1)do
+	read input
+	atr aux = input
+
+	while (aux > 0) do
+		atr aux = aux - 2
+	endwhile
+
+	if (aux==(-1))
+		print input
+		atr total = total + 1
+	else
+	endif
+endfor
+
+print total

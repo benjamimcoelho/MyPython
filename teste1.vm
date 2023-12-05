@@ -1,0 +1,18 @@
+begindeclares
+    int i
+    int n
+    int x
+enddeclares
+
+while(i<3) do
+    atr n=0
+    while(n<10)do
+        print x
+        atr x = x+1
+        atr n = n+1
+    endwhile
+    atr i = i+1
+endwhile
+
+
+

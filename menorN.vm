@@ -1,0 +1,21 @@
+begindeclares
+	int input
+	int min
+	int n
+enddeclares
+
+read n
+read min
+atr n= n - 1
+
+while(n>0) do
+	read input
+	if (input<min)
+		atr min=input
+	else 
+	endif
+	atr n = n - 1
+endwhile
+
+print min
+	

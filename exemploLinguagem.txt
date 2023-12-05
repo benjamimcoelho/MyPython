@@ -1,0 +1,28 @@
+<declare x /> 		<comentario declarar a variavel inteira x />
+
+<atribuir x=12+3 /> 	<comentario atribuir um valor de uma expressão a uma variável />
+
+<stdin y /> 		<comentario ler do standard input para a variavel y />
+
+<stdout y /> 		<comentario escrever o valor de y no standard output />
+
+<if x==2 > 		<comentario estrutura condicional if />
+	<stdout x />
+	<else stdout y/>
+<if />
+
+
+
+------------------------------------------------------------------------
+
+Gramática para a linguagem:
+
+Programa -> Operacoes
+Operacoes -> Operacoes Operacao
+	| Vazio
+Operacao -> Declare
+	| Comment
+	| SDIN
+	| STDOUT
+	| Condition
+

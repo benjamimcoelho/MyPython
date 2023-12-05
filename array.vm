@@ -1,0 +1,15 @@
+begindeclares
+	int i
+	arrayInt teste[10]
+	int input
+enddeclares
+
+for(atr i=0;i<10;atr i= i + 1)do
+	prints "Insira um valor para inserir no array"
+	read input
+	atr teste[i]=input
+endfor
+
+for(atr i=9;i>=0;atr i= i - 1)do
+	print teste[i]
+endfor
